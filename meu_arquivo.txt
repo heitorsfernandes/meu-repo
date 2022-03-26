@@ -1,3 +1,4 @@
+
 O que eu vou aprender na Trybe: 
 Unix
 Bash
@@ -11,3 +12,7 @@ SQL
 Node.js
 TypeScript
 Programacao Orientada a Objetos
+Python
+Rede e Raspagem de Dados
+Algoritmos
+Estrutura de Dados
