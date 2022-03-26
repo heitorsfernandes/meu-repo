@@ -1,1 +1,13 @@
-Meu primeiro repositório Git.
+O que eu vou aprender na Trybe: 
+Unix
+Bash
+Git
+HTML
+CSS
+Javascript
+React
+Metodologias Ágeis 
+SQL
+Node.js
+TypeScript
+Programacao Orientada a Objetos
