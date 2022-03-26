@@ -1,1 +1,5 @@
 Meu primeiro repositório Git.
+Python
+Rede e Raspagem de Dados
+Algoritmos
+Estrutura de Dados
