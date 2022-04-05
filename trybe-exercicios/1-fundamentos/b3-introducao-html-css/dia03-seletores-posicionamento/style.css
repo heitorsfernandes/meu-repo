@@ -6,3 +6,37 @@
 
  */
 
+div:hover {
+    border: 5px solid red;
+}
+div:nth-of-type(1) {
+    background-color: blue;
+}
+div:nth-of-type(2) {
+    background-color: rgb(113, 113, 252);
+}
+div:nth-of-type(3) {
+    background-color: orange;
+}
+div:nth-of-type(4) {
+    background-color: rgb(170, 111, 120);
+}
+div:nth-of-type(5) {
+    background-color: rgb(248, 200, 208);
+}
+
+div:nth-of-type(1) h3 {
+    font-style: italic ;
+}
+div:nth-of-type(2) h3,{
+    font-family: sans-serif;;
+}
+div:nth-of-type(3) h3 {
+    color:brown;
+}
+div:nth-of-type(4) h3, {
+    background-color: rgb(170, 111, 120);
+}
+div:nth-of-type(5) h3, {
+    background-color: rgb(248, 200, 208);
+}
