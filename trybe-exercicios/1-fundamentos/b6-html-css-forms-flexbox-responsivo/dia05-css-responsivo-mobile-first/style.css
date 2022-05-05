@@ -1,0 +1,60 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+
+/*  5- Guarde a largura da tela no ponto que você identificou que o layout atual não funcionou bem (por exemplo 800px). Esse será o primeiro breakpoint do layout. Um breakpoint é apenas um ponto onde estamos definindo que o design atual deve mudar;
+ html { */
+
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* 1 - Faça o tamanho da fonte ser maior; */
+  /* 4 - Adicione um pouco de margin na página. */
+  body {
+    font-size:1.5rem;
+    margin: 10px 15px;
+  }
+  
+  article {
+  
+  }
+
+  /* 2 - Faça o tamanho da fonte dos elementos h1 ser menor; */
+  h1 {
+    font-size:1.5rem;
+  }
+  
+  h2 {
+  
+  }
+
+/*   3 - Aumente o espaçamento entre as figuras; */
+  img {
+      padding: 15px 0px; 
+      max-width: 100%;
+  }
+  
+  main {
+    display:flex;
+    flex-direction:column;
+  }
+  
+  section {
+    display:flex;
+    flex-flow:row wrap;
+  }
+  
+  figure {
+      margin: 0;
+      
+  }
+  
+  figcaption {
+    font-size: .8em;
+  }
+
