@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submeter Palestra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="speaker-form-header">
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário abaixo.</em></p>
+  </header>
+
+  <main>
+    <form class="speaker-form" action="" method="get">
+      <div class="form-row">
+        <div class="line-content">
+          <label for="full-name">Nome:</label>
+          <input type="text" name="full-name" id="full-name">
+        </div>
+
+        <div class="line-content">
+          <fieldset>
+            <legend>Tipo de palestra</legend>
+            <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+            <label for="talk-type-1">Palco Principal</label>
+            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
+            <label for="talk-type-2">Workshop</label>
+          </fieldset>
+        </div>
+
+        <div class="line-content">
+          <label for="t-shirt">Tamanho da camiseta:</label>
+          <select name="t-shirt" id="t-shirt">
+            
+          </select>
+        </div>
+
+        <div class="line-content">
+          <label for="abstract">Resumo da palestra:</label>
+          <textarea name="abstract" id="abstract"></textarea>
+          <div class="instructions">Descreva sua palestra em 500 palavras ou menos</div>
+        </div>
+
+        <div class="line-content">
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script>
+    const camiseta = document.getElementById('t-shirt');
+    const tamanhos = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'XGG'];
+    
+    for (let tamanho of tamanhos) {
+      const opt = document.createElement('option');
+      opt.value = tamanho;
+      opt.innerHTML = tamanho;
+      camiseta.appendChild(opt);
+    }
+  </script>
+</body>
+</html>
