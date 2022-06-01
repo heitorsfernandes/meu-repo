@@ -1,3 +1,4 @@
+/* 2 - Agora, dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas? */
 const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
   `${name} is ${value} ${measurementUnit} apart from the Sun`;
 
@@ -26,5 +27,5 @@ const jupiter = {
 };
 
 console.log(planetDistanceFromSun(mars)); // A - 1
-console.log(planetDistanceFromSun(venus)); // B - 2 
-console.log(planetDistanceFromSun(jupiter)); // C - 3
+setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B - 3
+setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C - 2 
