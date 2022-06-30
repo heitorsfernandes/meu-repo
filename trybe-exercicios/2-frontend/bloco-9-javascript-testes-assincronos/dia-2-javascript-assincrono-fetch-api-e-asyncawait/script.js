@@ -1,16 +1,22 @@
-// apiScript.js
-/* A partir daí, faça a piada aparecer no DOM da sua página! */
-const API_URL = 'https://icanhazdadjoke.com/';
 
-const fetchJoke = () => {
-  const myObject = {
-    method: 'GET',
-    headers: { 'Accept': 'application/json' }
-  };
+const url = 'https://api.coincap.io/v2/assets';
+const list = document.getElementById('criptoList');
 
-  fetch(API_URL, myObject)
-    .then(response => response.json())
-    .then(data => document.querySelector("#jokeContainer").innerText = data.joke);
+function append(data) {
+ return data.forEach((criptoCoin) => {
+ const li = document.createElement('li');
+ li.innerText = `${criptoCoin.name}(${criptoCoin.symbol}):${criptoCoin.priceUsd}`;
+ list.appendChild(li);
+ })
+} 
+
+const fetchCripto = () => {
+  const cripto = fetch(url)
+    .then((response) => response.json())
+    .then((data) => append(data))
+    .catch((error) => console.log('ih deu ruim', error));
+  console.log(cripto);
+
 };
 
-window.onload = () => fetchJoke();
+window.onload = () => fetchCripto();
