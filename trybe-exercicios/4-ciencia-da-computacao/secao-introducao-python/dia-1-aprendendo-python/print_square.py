@@ -1,8 +1,8 @@
-def printSquare(number):
+def print_square(number):
     index = 0
     while index < number:
         print(number * '*')
         index += 1
 
 
-printSquare(5)
+print_square(5)

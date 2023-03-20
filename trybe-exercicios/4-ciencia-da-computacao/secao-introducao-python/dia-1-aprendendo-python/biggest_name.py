@@ -1,4 +1,4 @@
-def biggestName(names):
+def biggest_name(names):
     biggest = ''
     for name in names:
         if len(biggest) < len(name):
@@ -6,4 +6,4 @@ def biggestName(names):
     return print(biggest)
 
 
-biggestName(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"])
+biggest_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"])
